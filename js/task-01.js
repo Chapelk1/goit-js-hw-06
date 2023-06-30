@@ -1,10 +1,7 @@
 
 
 
-const parentEl = document.querySelector('#categories')
-
-const childsEl = [...parentEl.children]
-
+const childsEl = document.querySelectorAll('.item')
 
 console.log(`Number of categories: ${childsEl.length}`);
 
@@ -13,18 +10,10 @@ childsEl.forEach((el) => {
     
     console.log(`Category: ${firstChild}`);
 
-    const lastChild = [...el.lastElementChild.children].length
+    const lastChild = el.querySelectorAll('li').length
 
     console.log(`Elements: ${lastChild}`);
 });
-
-
-
-
-
-
-
-
 
 
 
