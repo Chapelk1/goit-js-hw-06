@@ -4,7 +4,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-const color = getRandomHexColor()
+
 
 const refs = {
   body: document.body,
@@ -13,6 +13,7 @@ const refs = {
 };
 
 refs.btn.addEventListener('click', (event) => {
+  const color = getRandomHexColor()
   refs.body.style.backgroundColor = color;
   refs.span.textContent = color;
 })
