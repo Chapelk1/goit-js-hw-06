@@ -15,14 +15,14 @@ const refs = {
 };
 
 function createBoxes(amount) {
-  for (let i = 0; i < refs.number; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const div = document.createElement("div");
     div.style.width = `${refs.size}px`;
     div.style.height = `${refs.size}px`;
     div.style.backgroundColor = getRandomHexColor();
-    div.style.marginTop= `15px`;
+    div.style.marginTop = `15px`;
     refs.size += 10;
-    refs.allBoxes.push(div)
+    refs.allBoxes.push(div);
   }
 };
 
